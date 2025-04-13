@@ -47,20 +47,19 @@
         class="fixed top-7 right-0 left-0 w-[90%] h-[76px] rounded-3xl flex items-center py-4 px-8 mx-auto bg-black/50 backdrop-blur-[6px]">
 
         <div class="flex justify-between w-full items-center">
-            <nav class="flex gap-x-7 items-center">
+            <nav class="flex gap-x-7 items-center h-11">
                 <div class="size-12">
                     <img src="images/app-logo.png" alt="coffe">
                 </div>
-                <ul class="flex gap-x-6 text-gray-300 tracking-tightest">
+                <ul class="h-full flex gap-x-6 text-gray-300 tracking-tightest child:leading-[44px] child-link-hover:text-orange-200">
                     <li class="font-DanaMedium text-orange-200">
                         <a href="#">صفحه اصلی</a>
                     </li>
-                    <li class="relative">
+                    <li class="relative group">
                         <!-- has sub -->
-                        <a href="#">فروشگاه</a>
+                        <a href="#" class="group-hover:text-orange-300 transition-colors">فروشگاه</a>
                         <!-- sub Menu -->
-                        <div
-                            class="absolute p-5 bg-white shadow-normal dark:text-white text-zinc-700 w-44 space-y-3 rounded-2xl border-t-[3px] border-t-orange-300 child:block child:transition-colors child-hover:text-orange-300 tracking-normal">
+                        <div class="opacity-0 invisible group-hover:opacity-100 group-hover:visible absolute p-5 space-y-3.5 bg-white shadow-normal text-zinc-700 dark:bg-zinc-700 dark:text-white w-44 e-y-3 rounded-2xl border-t-[3px] border-t-orange-300 transition-all child:block child:transition-colors child-hover:text-orange-300 tracking-normal child:leading-none">
                             <a href="#" class="text-orange-300">قهوه ویژه</a>
                             <a href="#">ویژه در سطح جهانی</a>
                             <a href="#">قهوه درجه یک</a>

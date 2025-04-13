@@ -7,6 +7,17 @@
     <title>Coffee</title>
     <link rel="stylesheet" href="./styles/app.css">
     <link rel="icon" href="images/fav-icon.png">
+    <script type="text/javascript">
+        // document.documentElement.classList.toggle(
+        //     'dark',
+        //     localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+        // )
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme:dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
 </head>
 
 <body class="font-Dana bg-gray-100 dark:bg-zinc-800">
@@ -51,7 +62,8 @@
                 <div class="size-12">
                     <img src="images/app-logo.png" alt="coffe">
                 </div>
-                <ul class="h-full flex gap-x-6 text-gray-300 tracking-tightest child:leading-[44px] child-link-hover:text-orange-200">
+                <ul
+                    class="h-full flex gap-x-6 text-gray-300 tracking-tightest child:leading-[44px] child-link-hover:text-orange-200">
                     <li class="font-DanaMedium text-orange-200">
                         <a href="#">صفحه اصلی</a>
                     </li>
@@ -59,7 +71,8 @@
                         <!-- has sub -->
                         <a href="#" class="group-hover:text-orange-300 transition-colors">فروشگاه</a>
                         <!-- sub Menu -->
-                        <div class="opacity-0 invisible group-hover:opacity-100 group-hover:visible absolute p-5 space-y-3.5 bg-white shadow-normal text-zinc-700 dark:bg-zinc-700 dark:text-white w-44 e-y-3 rounded-2xl border-t-[3px] border-t-orange-300 transition-all child:block child:transition-colors child-hover:text-orange-300 tracking-normal child:leading-none">
+                        <div
+                            class="absolute top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible p-5 text-base space-y-3 bg-white shadow-normal text-zinc-700 dark:bg-zinc-700 dark:text-white w-44 rounded-2xl border-t-[3px] border-t-orange-300 transition-all child:inline-block child:transition-colors child-hover:text-orange-300 tracking-normal child:leading-none">
                             <a href="#" class="text-orange-300">قهوه ویژه</a>
                             <a href="#">ویژه در سطح جهانی</a>
                             <a href="#">قهوه درجه یک</a>
@@ -84,23 +97,31 @@
             </nav>
 
             <div class="flex items-center text-orange-200 gap-x-8">
-                <div class="flex gap-x-5">
+                <div class="flex gap-x-5 child:py-2.5">
                     <!-- Cart -->
                     <div>
-                        <svg class="size-6">
-                            <use xlink:href="#shopping-cart"></use>
-                        </svg>
+                        <div>
+                            <svg class="size-6">
+                                <use href="#shopping-cart"></use>
+                            </svg>
+                        </div>
+                        <div>
+
+                        </div>
                     </div>
-                    <div>
-                        <svg class="size-6">
-                            <use xlink:href="#moon"></use>
+                    <div class="cursor-pointer" id="toggle-theme">
+                        <svg class="size-6 inline-block dark:hidden">
+                            <use href="#moon"></use>
+                        </svg>
+                        <svg class="size-6 hidden dark:inline-block">
+                            <use href="#sun"></use>
                         </svg>
                     </div>
                 </div>
                 <span class="block w-px h-12 bg-white/20"></span>
                 <a href="#" class="flex items-center gap-x-2 tracking-tightest">
                     <svg class="size-6">
-                        <use xlink:href="#arrow-left-end-on-rectangle"></use>
+                        <use href="#arrow-left-end-on-rectangle"></use>
                     </svg>
                     ورود | ثبت نام
                 </a>

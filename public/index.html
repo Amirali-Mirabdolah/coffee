@@ -49,6 +49,12 @@
                 d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15M12 9l3 3m0 0-3 3m3-3H2.25" />
         </symbol>
 
+        <symbol id="chevron-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        </symbol>
+
+
     </svg>
     <!-- All App Icons -->
 
@@ -99,16 +105,31 @@
             <div class="flex items-center text-orange-200 gap-x-8">
                 <div class="flex gap-x-5 child:py-2.5">
                     <!-- Cart -->
-                    <div>
-                        <div>
+                    <div class="relative group">
+                        <div class="cursor-pointer">
                             <svg class="size-6">
                                 <use href="#shopping-cart"></use>
                             </svg>
                         </div>
-                        <div>
 
+                        <!-- Cart Header -->
+                        <div
+                            class="absolute left-0 w-80 top-full p-4  group-hover:opacity-100 group-hover:visible bg-white text-zinc-700 dark:bg-zinc-700 dark:text-white shadow-normal rounded-2xl border-t-[3px] border-t-orange-300 transition-all tracking-normal child:leading-none">
+                            <div class="flex justify-between items-center tracking-tighter font-DanaMedium text-xs">
+                                <span class="text-gray-300">1 مورد</span>
+                                <a href="#" class="flex items-center text-orange-300">
+                                    مشاهده سبد خرید
+                                    <svg class="size-3">
+                                        <use href="#chevron-left"></use>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
+
+                        <!-- Cart Body -->
                     </div>
+
+                    <!-- Dark Ligh Mode -->
                     <div class="cursor-pointer" id="toggle-theme">
                         <svg class="size-6 inline-block dark:hidden">
                             <use href="#moon"></use>
@@ -117,6 +138,7 @@
                             <use href="#sun"></use>
                         </svg>
                     </div>
+
                 </div>
                 <span class="block w-px h-12 bg-white/20"></span>
                 <a href="#" class="flex items-center gap-x-2 tracking-tightest">

@@ -35,6 +35,7 @@ module.exports = {
     function ({ addVariant }) {
       addVariant('child', '&>*');
       addVariant('child-link-hover', '&>li>a:hover');
+      addVariant('child-link-li','&>li>a')
       addVariant('child-hover', '&>*:hover')
     }
   ],

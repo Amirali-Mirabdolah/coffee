@@ -675,6 +675,10 @@ body {
   inset: 0px;
 }
 
+.-right-52 {
+  right: -13rem;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -697,14 +701,6 @@ body {
 
 .top-full {
   top: 100%;
-}
-
-.right-52 {
-  right: 13rem;
-}
-
-.-right-52 {
-  right: -13rem;
 }
 
 .z-20 {
@@ -817,6 +813,10 @@ body {
   height: 100%;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -849,6 +849,10 @@ body {
   width: 115px;
 }
 
+.w-\[90px\] {
+  width: 90px;
+}
+
 .w-\[98\%\] {
   width: 98%;
 }
@@ -859,6 +863,18 @@ body {
 
 .w-px {
   width: 1px;
+}
+
+.w-\[70px\] {
+  width: 70px;
+}
+
+.w-\[80px\] {
+  width: 80px;
+}
+
+.w-\[78px\] {
+  width: 78px;
 }
 
 .shrink-0 {
@@ -903,6 +919,11 @@ body {
 .gap-x-3 {
   -moz-column-gap: 0.75rem;
        column-gap: 0.75rem;
+}
+
+.gap-x-3\.5 {
+  -moz-column-gap: 0.875rem;
+       column-gap: 0.875rem;
 }
 
 .gap-x-4 {
@@ -1048,6 +1069,10 @@ body {
 
 .pt-2\.5 {
   padding-top: 0.625rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
 }
 
 .font-Dana {

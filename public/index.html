@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="./styles/app.css">
     <link rel="icon" href="images/fav-icon.png">
     <script type="text/javascript">
-        // document.documentElement.classList.toggle(
-        //     'dark',
-        //     localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-        // )
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme:dark)').matches)) {
             document.documentElement.classList.add('dark')
         } else {
@@ -350,7 +346,7 @@
                     <!-- Cart -->
 
                     <!-- Dark Ligh Mode -->
-                    <div class="cursor-pointer" id="toggle-theme">
+                    <div class="cursor-pointer toggle-theme">
                         <svg class="size-6 inline-block dark:hidden">
                             <use href="#moon"></use>
                         </svg>
@@ -381,8 +377,9 @@
         </div>
         <!-- Nav Icon -->
 
-        <!-- Nav -->
-        <div class="nav-menu fixed top-0 px-3.5 bottom-0 -right-52 w-52 bg-white dark:bg-zinc-700 min-h-screen z-20 transition-all overflow-y-auto">
+        <!-- Nav Mobile-->
+        <div
+            class="nav-menu fixed top-0 px-3.5 bottom-0 -right-52 w-52 bg-white dark:bg-zinc-700 min-h-screen z-20 transition-all overflow-y-auto">
 
             <!-- Menu Navbar -->
             <div
@@ -479,9 +476,9 @@
                     ورود | ثبت نام
                 </a>
                 <div>
-                    <a href="#"">
-                    <svg class=" size-4 inline-block dark:hidden">
-                        <use href="#moon"></use>
+                    <a href="#" class="toggle-theme">
+                        <svg class=" size-4 inline-block dark:hidden">
+                            <use href="#moon"></use>
                         </svg>
                         <svg class="size-4 hidden dark:inline-block">
                             <use href="#sun"></use>
@@ -502,7 +499,41 @@
             <!-- Menu Footer -->
 
         </div>
-        <!-- Nav -->
+        <!-- Nav Mobile-->
+
+        <!-- Mobile Cart -->
+        <div
+            class="fixed top-0 px-3.5 bottom-0 left-0 w-52 bg-white dark:bg-zinc-700 min-h-screen z-20 transition-all overflow-y-auto">
+
+            <!-- Cart Mobile Navbar -->
+            <div
+                class="flex items-center justify-between mb-4 pt-4 pb-4 border-b border-b-gray-300 dark:border-b-white/10">
+                <svg class="cart-close-btn w-4 h-4 text-zinc-600 dark:text-white">
+                    <use href="#x-mark"></use>
+                </svg>
+                <span class="text-zinc-700 dark:text-white font-DanaMedium">سبد خرید</span>
+            </div>
+            <!-- Cart Mobile Navbar -->
+
+            <!-- Cart Mobile Footer -->
+            <div class="flex items-center gap-x-3">
+                <div>
+                    <span class="text-gray-300 text-xs tracking-tighter font-DanaMedium">مبلغ قابل
+                        پرداخت</span>
+                    <div class="text-zinc-700 dark:text-white font-DanaDemiBold">
+                        350,000
+                        <span class="font-Dana text-xs">تومان</span>
+                    </div>
+                </div>
+                <a href="#"
+                    class="w-[78px] h-11 flex justify-center items-center text-white bg-teal-600 dark:bg-emerald-500 transition-colors font-Dana rounded-xl tracking-tightest">
+                    ثبت سفارش
+                </a>
+            </div>
+            <!-- Cart Mobile Footer -->
+
+        </div>
+        <!-- Mobile Cart -->
 
 
 
@@ -521,7 +552,7 @@
     </div>
 
     <!-- when menu open, change background opacity -->
-    <div class="hidden overlay md:hidden fixed bg-black/40 inset-0 w-full h-full"></div>
+    <div class="overlay md:hidden fixed bg-black/40 inset-0 w-full h-full transition-all"></div>
 
     <script src="scripts/app.js"></script>
 </body>

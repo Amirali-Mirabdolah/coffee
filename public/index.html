@@ -503,7 +503,7 @@
 
         <!-- Mobile Cart -->
         <div
-            class="fixed top-0 px-3.5 bottom-0 left-0 w-52 bg-white dark:bg-zinc-700 min-h-screen z-20 transition-all overflow-y-auto">
+            class="mobile-cart fixed top-0 px-3.5 bottom-0 -left-52 flex flex-col w-52 bg-white dark:bg-zinc-700 min-h-screen z-20 transition-all overflow-y-auto">
 
             <!-- Cart Mobile Navbar -->
             <div
@@ -515,8 +515,53 @@
             </div>
             <!-- Cart Mobile Navbar -->
 
+            <!-- Cart Mobile Body -->
+            <div class="child:pb-4 child:mb-4 max-h-[250px] overflow-y-auto">
+                <div class="flex gap-x-1 border-b border-b-gray-100 dark:border-b-white/10">
+                    <img src="images/products/p3.png" class="size-20" alt="product 1">
+                    <div class="flex flex-col justify-between gap-y-1">
+                        <h4 class="font-DanaMedium text-zinc-700 dark:text-white text-sm line-clamp-2">
+                            قهوه اسپرسو
+                            بن
+                            مانو مدل
+                            پریسکا
+                            250 گرمی</h4>
+                        <div>
+                            <span
+                                class="text-teal-600 dark:text-emerald-500 tracking-tighter font-DanaMedium text-xs">14,500
+                                تومان تخفیف</span>
+                            <div class="text-zinc-700 dark:text-white font-DanaDemiBold">
+                                175,000
+                                <span class="font-Dana text-xs">تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-x-1 border-b border-b-gray-100 dark:border-b-white/10">
+                    <img src="images/products/p2.png" class="size-20" alt="product 1">
+                    <div class="flex flex-col justify-between gap-y-1">
+                        <h4 class="font-DanaMedium text-zinc-700 dark:text-white text-sm line-clamp-2">
+                            قهوه اسپرسو
+                            بن
+                            مانو مدل
+                            پریسکا
+                            250 گرمی</h4>
+                        <div>
+                            <span
+                                class="text-teal-600 dark:text-emerald-500 tracking-tighter font-DanaMedium text-xs">14,500
+                                تومان تخفیف</span>
+                            <div class="text-zinc-700 dark:text-white font-DanaDemiBold">
+                                175,000
+                                <span class="font-Dana text-xs">تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cart Mobile Body -->
+
             <!-- Cart Mobile Footer -->
-            <div class="flex items-center gap-x-3">
+            <div class="flex items-center gap-x-2 mt-auto mb-6">
                 <div>
                     <span class="text-gray-300 text-xs tracking-tighter font-DanaMedium">مبلغ قابل
                         پرداخت</span>
@@ -526,7 +571,7 @@
                     </div>
                 </div>
                 <a href="#"
-                    class="w-[78px] h-11 flex justify-center items-center text-white bg-teal-600 dark:bg-emerald-500 transition-colors font-Dana rounded-xl tracking-tightest">
+                    class="w-[80px] h-9 flex justify-center items-center text-white bg-teal-600 dark:bg-emerald-500 transition-colors font-Dana rounded-xl tracking-tightest">
                     ثبت سفارش
                 </a>
             </div>
@@ -542,7 +587,7 @@
                 <use href="#logo-type"></use>
             </svg>
         </div>
-        <div>
+        <div class="cart-icon">
             <svg class="size-5 text-zinc-700 dark:text-white">
                 <use href="#shopping-cart"></use>
             </svg>
@@ -551,8 +596,10 @@
 
     </div>
 
+    <div class="container"></div>
+
     <!-- when menu open, change background opacity -->
-    <div class="overlay md:hidden fixed bg-black/40 inset-0 w-full h-full transition-all"></div>
+    <div class="hidden overlay md:hidden fixed bg-black/40 inset-0 w-full h-full transition-all"></div>
 
     <script src="scripts/app.js"></script>
 </body>

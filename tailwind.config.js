@@ -28,14 +28,27 @@ module.exports = {
       },
       letterSpacing: {
         "tightest": "-0.065em"
+      },
+      container:{
+        center:true,
+        padding:{
+          DEFAULT:'0.8rem',
+          lg:'0.5rem'
+        }
       }
     },
+    screens: {
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px'
+    }
   },
   plugins: [
     function ({ addVariant }) {
       addVariant('child', '&>*');
       addVariant('child-link-hover', '&>li>a:hover');
-      addVariant('child-link-li','&>li>a')
+      addVariant('child-link-li', '&>li>a')
       addVariant('child-hover', '&>*:hover')
     }
   ],

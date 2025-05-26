@@ -6,6 +6,9 @@ const barsIcon = document.querySelector('.bars-icon')
 const overlay = document.querySelector('.overlay')
 const navMenu = document.querySelector('.nav-menu')
 const closeMenuButton = document.querySelector('.close-menu')
+const cartMenu = document.querySelector('.mobile-cart')
+const cartButton = document.querySelector('.cart-icon')
+const closeCartButton = document.querySelector('.cart-close-btn')
 
 document.querySelectorAll('.toggle-theme').forEach(button => {
     button.addEventListener("click", () => {
@@ -33,6 +36,12 @@ const closeMenuHandler = () => {
     overlay.classList.add('hidden')
 }
 
+const closeCartHandler = () => {
+    cartMenu.classList.remove('left-0')
+    cartMenu.classList.add('-left-52')
+    overlay.classList.add('hidden')
+}
+
 barsIcon.addEventListener('click', () => {
     navMenu.classList.add('right-0')
     navMenu.classList.remove('-right-52')
@@ -40,9 +49,18 @@ barsIcon.addEventListener('click', () => {
 })
 
 closeMenuButton.addEventListener('click', closeMenuHandler)
+closeCartButton.addEventListener('click', closeCartHandler)
 
 overlay.addEventListener('click', (e) => {
+    // console.log(e.currentTarget)
     if (e.currentTarget) {
         closeMenuHandler()
+        closeCartHandler()
     }
+})
+
+cartButton.addEventListener('click', () => {
+    cartMenu.classList.remove('-left-52')
+    cartMenu.classList.add('left-0')
+    overlay.classList.remove('hidden')
 })

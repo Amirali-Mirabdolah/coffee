@@ -44,20 +44,20 @@
         font-display: swap;
     }
 
-    body {
+    /* body {
         background-image: url("../images/headerBgDesktop.webp");
         background-repeat: no-repeat;
         background-size: cover;
-    }
+    } */
 }
 
 @layer components {
 
-    .submenu{
-        @apply  hidden flex-col gap-y-2.5 mt-2.5 pr-6 text-sm text-zinc-600 dark:text-white
+    .submenu {
+        @apply hidden flex-col gap-y-2.5 mt-2.5 pr-6 text-sm text-zinc-600 dark:text-white
     }
-    
-    .submenu--open{
+
+    .submenu--open {
         @apply flex
     }
 
@@ -79,5 +79,25 @@
         top: 0;
         bottom: 0;
         margin: auto;
+    }
+
+    .circle {
+        @apply flex items-center justify-center border rounded-full;
+    }
+
+    .circle--main {
+        @apply absolute bottom-0 left-0 right-0 mx-auto translate-y-2/4 hidden md:flex;
+    }
+
+    .circle--lg {
+        @apply w-[162px] h-[162px] border-white/25;
+    }
+
+    .circle--md {
+        @apply w-[116px] h-[116px] border-white/50;
+    }
+
+    .circle--sm {
+        @apply w-[76px] h-[76px] border-white/50;
     }
 }

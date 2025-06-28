@@ -144,13 +144,19 @@
                 clip-rule="evenodd" />
         </symbol>
 
+        <symbol id="chevron-left-mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+                d="M11.78 5.22a.75.75 0 0 1 0 1.06L8.06 10l3.72 3.72a.75.75 0 1 1-1.06 1.06l-4.25-4.25a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z"
+                clip-rule="evenodd" />
+        </symbol>
+
 
     </svg>
     <!-- All App Icons -->
 
     <!-- 20% smaller than original display -->
     <header
-        class="fixed z-50 top-7 right-0 left-0 w-[98%] lg:w-[90%] h-[76px] rounded-3xl hidden md:flex items-center py-4 px-5 lg:px-8 mx-auto bg-black/50 backdrop-blur-[6px]">
+        class="fixed top-7 right-0 left-0 z-50 w-[98%] lg:w-[90%] h-[76px] rounded-3xl hidden md:flex items-center py-4 px-5 lg:px-8 mx-auto bg-black/50 backdrop-blur-[6px]">
 
         <div class="flex justify-between w-full items-center">
             <nav class="flex gap-x-3 lg:gap-x-7 items-center h-11">
@@ -602,8 +608,8 @@
     <!-- App Main -->
     <main>
         <section
-            class="home relative h-[200px] xs:h-auto xs:aspect-[2/1] md:aspect-auto bg-home-mobile md:bg-home-desktop bg-no-repeat bg-cover bg-[center_top]">
-            <div class="container overflow-y-hidden relative h-full md:min-h-screen flex justify-end items-center">
+            class="home h-[200px] xs:h-auto xs:aspect-[2/1] md:aspect-auto bg-home-mobile md:bg-home-desktop bg-no-repeat bg-cover bg-[center_top]">
+            <div class="container overflow-y-hidden h-full md:min-h-screen flex justify-end items-center">
                 <div class="text-white">
                     <h2 class="font-MorabbaBold text-2xl md:text-5xl mb-0.5 md:mb-2">قهوه عربیکا تانزانیا</h2>
                     <span class="font-MorabbaLight text-xl md:text-4xl">یک فنجان بالانس!</span>
@@ -627,6 +633,24 @@
                 </svg>
             </div>
 
+        </section>
+
+        <section class="products pt-8 md:pt-24 lg:pt-48">
+            <div class="container">
+                <div class="flex justify-between items-end mb-5 md:mb-10">
+                    <div>
+                        <h3 class="section-title">جدیدترین محصولات</h3>
+                        <span class="section-subtitle">فرآوری شده از دانه قهوه</span>
+                    </div>
+                    <a href="#" class="section-link">
+                        <span class="hidden md:inline-block">مشاهده همه محصولات</span>
+                        <span class="inline-block md:hidden">مشاهده همه</span>
+                        <svg class="size-4">
+                            <use href="#chevron-left-mini"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
     <!-- App Main -->

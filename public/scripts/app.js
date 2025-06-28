@@ -1,4 +1,3 @@
-// const toggleThemeBtn = document.querySelectorAll(".toggle-theme");
 const openSubmenuButton = document.querySelector('.submenu-open-btn')
 const submenu = document.querySelector('.submenu')
 const chevronIcon = document.querySelector('#submenu-chevron')
@@ -52,7 +51,6 @@ closeMenuButton.addEventListener('click', closeMenuHandler)
 closeCartButton.addEventListener('click', closeCartHandler)
 
 overlay.addEventListener('click', (e) => {
-    // console.log(e.currentTarget)
     if (e.currentTarget) {
         closeMenuHandler()
         closeCartHandler()

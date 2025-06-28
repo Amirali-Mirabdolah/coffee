@@ -100,4 +100,29 @@
     .circle--sm {
         @apply w-[76px] h-[76px] border-white/50;
     }
+
+    @media screen and (min-width:1280px) {
+        html.dark .products {
+            background: url("../images/product-bg.png");
+        }
+
+        .products {
+            background: linear-gradient(rgba(243, 244, 246, 0.65), rgba(243, 244, 246, 0.65)), url("../images/product-bg.png");
+            height: 900px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .section-title {
+        @apply text-2xl md:text-4xl font-MorabbaMedium text-zinc-700 dark:text-white
+    }
+
+    .section-subtitle {
+        @apply text-lg md:text-2xl inline-block font-MorabbaLight mt-0.5 md:mt-1 text-zinc-700 dark:text-white
+    }
+
+    .section-link {
+        @apply flex items-center md:gap-x-1 text-base md:text-xl tracking-tightest h-8 pr-3 pl-1 text-orange-300 md:hover:bg-orange-300/20 transition-colors rounded-md
+    }
 }

@@ -103,12 +103,12 @@
 
     @media screen and (min-width:1280px) {
         html.dark .products {
-            background: url("../images/product-bg.png");
+            background-image: url("../images/product-bg.png");
         }
 
         .products {
             background: linear-gradient(rgba(243, 244, 246, 0.65), rgba(243, 244, 246, 0.65)), url("../images/product-bg.png");
-            height: 900px;
+            /* height: 900px; */
             background-size: 100%;
             background-repeat: no-repeat;
         }
@@ -125,4 +125,20 @@
     .section-link {
         @apply flex items-center md:gap-x-1 text-base md:text-xl tracking-tightest h-8 pr-3 pl-1 text-orange-300 md:hover:bg-orange-300/20 transition-colors rounded-md
     }
+
+    .offer{
+        @apply relative text-gray-400
+    }
+
+    .offer::after{
+        content: "";
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        inset: 0;
+        top: -3px;
+        margin: auto;
+        background-color: #EF4444;
+    }
+
 }

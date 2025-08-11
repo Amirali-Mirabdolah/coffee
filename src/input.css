@@ -153,6 +153,11 @@
     @apply flex items-center justify-center;
   }
 
+  .swiper-button-prev-custom,
+  .swiper-button-next-custom{
+    @apply flex-center size-9 md:size-10 rounded-full shadow-normal bg-white dark:bg-zinc-700 dark:text-white text-zinc-700 transition-all hover:bg-gray-300 dark:hover:bg-white dark:hover:text-zinc-700
+  }
+
   .category-banner__item1 {
     background: linear-gradient(
         270deg,

@@ -1019,6 +1019,11 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .-mt-1 {
   margin-top: -0.25rem;
 }
@@ -1071,8 +1076,8 @@ video {
   margin-left: 1.25rem;
 }
 
-.ml-\[18px\] {
-  margin-left: 18px;
+.ml-\[12px\] {
+  margin-left: 12px;
 }
 
 .mt-1 {
@@ -1099,20 +1104,16 @@ video {
   margin-top: 1.25rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .mt-8 {
   margin-top: 2rem;
 }
 
 .mt-auto {
   margin-top: auto;
-}
-
-.ml-\[12\] {
-  margin-left: 12;
-}
-
-.ml-\[12px\] {
-  margin-left: 12px;
 }
 
 .line-clamp-2 {
@@ -1259,6 +1260,10 @@ video {
   height: 40px;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
 .h-\[54px\] {
   height: 54px;
 }
@@ -1327,6 +1332,10 @@ video {
   width: 138px;
 }
 
+.w-\[296px\] {
+  width: 296px;
+}
+
 .w-\[80px\] {
   width: 80px;
 }
@@ -1345,10 +1354,6 @@ video {
 
 .w-px {
   width: 1px;
-}
-
-.max-w-\[193px\] {
-  max-width: 193px;
 }
 
 .max-w-\[201px\] {
@@ -1480,6 +1485,10 @@ video {
   row-gap: 1.5rem;
 }
 
+.gap-y-8 {
+  row-gap: 2rem;
+}
+
 .gap-y-9 {
   row-gap: 2.25rem;
 }
@@ -1545,6 +1554,10 @@ video {
 
 .border-2 {
   border-width: 2px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-b {
@@ -1711,6 +1724,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .py-1\.5 {
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
@@ -1800,6 +1818,10 @@ video {
 
 .font-MorabbaLight {
   font-family: Morabba Light;
+}
+
+.font-MorabbaMedium {
+  font-family: Morabba Medium;
 }
 
 .text-2xl {
@@ -1990,13 +2012,34 @@ video {
   }
 }
 
+.\*\:inline-block > * {
+  display: inline-block;
+}
+
+.\*\:h-1 > * {
+  height: 0.25rem;
+}
+
+.\*\:w-1 > * {
+  width: 0.25rem;
+}
+
 .\*\:rounded-2xl > * {
   border-radius: 1rem;
+}
+
+.\*\:rounded-full > * {
+  border-radius: 9999px;
 }
 
 .\*\:bg-white > * {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.\*\:bg-zinc-700 > * {
+  --tw-bg-opacity: 1;
+  background-color: rgb(63 63 70 / var(--tw-bg-opacity, 1));
 }
 
 .\*\:p-1\.5 > * {
@@ -2154,6 +2197,11 @@ video {
   color: rgb(63 63 70 / var(--tw-text-opacity, 1));
 }
 
+.\*\:dark\:bg-gray-400:is(.dark *) > * {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity, 1));
+}
+
 .\*\:dark\:bg-zinc-700:is(.dark *) > * {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity, 1));
@@ -2217,10 +2265,6 @@ video {
     width: auto;
   }
 
-  .sm\:w-full {
-    width: 100%;
-  }
-
   .sm\:max-w-\[193px\] {
     max-width: 193px;
   }
@@ -2238,6 +2282,11 @@ video {
   .md\:my-20 {
     margin-top: 5rem;
     margin-bottom: 5rem;
+  }
+
+  .md\:my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .md\:my-8 {
@@ -2289,6 +2338,10 @@ video {
     margin-top: 0.625rem;
   }
 
+  .md\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .md\:inline-block {
     display: inline-block;
   }
@@ -2330,6 +2383,11 @@ video {
     height: 1.75rem;
   }
 
+  .md\:size-8 {
+    width: 2rem;
+    height: 2rem;
+  }
+
   .md\:size-\[17px\] {
     width: 17px;
     height: 17px;
@@ -2363,6 +2421,10 @@ video {
 
   .md\:h-\[248px\] {
     height: 248px;
+  }
+
+  .md\:h-\[60px\] {
+    height: 60px;
   }
 
   .md\:min-h-screen {
@@ -2411,6 +2473,10 @@ video {
   .md\:gap-x-\[52px\] {
     -moz-column-gap: 52px;
          column-gap: 52px;
+  }
+
+  .md\:border-2 {
+    border-width: 2px;
   }
 
   .md\:bg-home-desktop {
@@ -2471,6 +2537,11 @@ video {
   .md\:text-3xl\/6 {
     font-size: 1.875rem;
     line-height: 1.5rem;
+  }
+
+  .md\:text-3xl\/\[48px\] {
+    font-size: 1.875rem;
+    line-height: 48px;
   }
 
   .md\:text-4xl {
@@ -2539,8 +2610,16 @@ video {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
   .lg\:flex-nowrap {
     flex-wrap: nowrap;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
   }
 
   .lg\:gap-x-3 {
@@ -2585,10 +2664,6 @@ video {
 
   .lg\:pt-48 {
     padding-top: 12rem;
-  }
-
-  .lg\:font-DanaDemiBold {
-    font-family: Dana DemiBold;
   }
 
   .lg\:text-2xl {

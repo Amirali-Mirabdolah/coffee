@@ -154,8 +154,44 @@
   }
 
   .swiper-button-prev-custom,
-  .swiper-button-next-custom{
-    @apply flex-center size-9 md:size-10 rounded-full shadow-normal bg-white dark:bg-zinc-700 dark:text-white text-zinc-700 transition-all hover:bg-gray-300 dark:hover:bg-white dark:hover:text-zinc-700
+  .swiper-button-next-custom {
+    @apply flex-center size-9 md:size-10 rounded-full shadow-normal bg-white dark:bg-zinc-700 dark:text-white text-zinc-700 transition-all hover:bg-gray-300 dark:hover:bg-white dark:hover:text-zinc-700;
+  }
+
+  .services {
+    @apply relative;
+  }
+
+  .services::after,
+  .services::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    background-color: #d1d5db;
+  }
+
+  @media screen and (min-width: 480px) {
+    .services::after,
+    .services::before {
+      content: none;
+    }
+  }
+
+  html.dark .services::after,
+  html.dark .services::before {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .services::after {
+    height: calc(100% + 1.25rem);
+    width: 1px;
+  }
+
+  .services::before {
+    width: calc(100% - 2rem);
+    height: 1px;
   }
 
   .category-banner__item1 {

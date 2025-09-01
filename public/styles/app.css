@@ -1132,6 +1132,10 @@ html.dark .services::after,
   margin-top: 0.375rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1154,18 +1158,6 @@ html.dark .services::after,
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mt-\[\] {
-  margin-top: ;
-}
-
-.mt-\[26px\] {
-  margin-top: 26px;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
 }
 
 .line-clamp-2 {
@@ -1320,10 +1312,6 @@ html.dark .services::after,
   height: 40px;
 }
 
-.h-\[500px\] {
-  height: 500px;
-}
-
 .h-\[50px\] {
   height: 50px;
 }
@@ -1428,12 +1416,24 @@ html.dark .services::after,
   width: 1px;
 }
 
+.w-2 {
+  width: 0.5rem;
+}
+
 .max-w-\[201px\] {
   max-width: 201px;
 }
 
 .max-w-\[606px\] {
   max-width: 606px;
+}
+
+.max-w-\[485pxpx\] {
+  max-width: 485pxpx;
+}
+
+.max-w-\[485px\] {
+  max-width: 485px;
 }
 
 .shrink-0 {
@@ -1524,9 +1524,9 @@ html.dark .services::after,
        column-gap: 0.375rem;
 }
 
-.gap-x-16 {
-  -moz-column-gap: 4rem;
-       column-gap: 4rem;
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
 }
 
 .gap-x-2 {
@@ -1591,9 +1591,8 @@ html.dark .services::after,
   row-gap: 2.25rem;
 }
 
-.gap-x-10 {
-  -moz-column-gap: 2.5rem;
-       column-gap: 2.5rem;
+.gap-y-4 {
+  row-gap: 1rem;
 }
 
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
@@ -1743,6 +1742,16 @@ html.dark .services::after,
 .bg-zinc-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity, 1));
+}
+
+.bg-red-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity, 1));
+}
+
+.\!bg-red-50 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity, 1)) !important;
 }
 
 .bg-gradient-to-r {
@@ -2609,6 +2618,11 @@ html.dark .services::after,
     gap: 1rem;
   }
 
+  .md\:gap-x-16 {
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+  }
+
   .md\:gap-x-2 {
     -moz-column-gap: 0.5rem;
          column-gap: 0.5rem;
@@ -2638,9 +2652,14 @@ html.dark .services::after,
     row-gap: 1.25rem;
   }
 
-  .md\:gap-x-16 {
-    -moz-column-gap: 4rem;
-         column-gap: 4rem;
+  .md\:gap-x-1 {
+    -moz-column-gap: 0.25rem;
+         column-gap: 0.25rem;
+  }
+
+  .md\:gap-x-12 {
+    -moz-column-gap: 3rem;
+         column-gap: 3rem;
   }
 
   .md\:border-2 {
